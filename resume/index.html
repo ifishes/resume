@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[简历]刘嘉欣-期中项目学习/广州</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#66B3FF;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#0080ff;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+
+        
+
+
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="/Users/andemundgarcia/Desktop/resume/assets/images/head-sculpture.jpeg" onload="loading()">
+                </section>
+
+                <h1 class="name">刘嘉欣</h1>
+                <h4 class="info-job">网页制作学习者 / 广州</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-address-card" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>刘嘉欣 / 女 / 18岁</span>
+                    </li>
+                    <li>
+                        <label>英语水平</label>
+                        <span>尚未考级</span>
+                    </li>
+                    <li>
+                        <label>计算机水平</label>
+                        <span>尚未考级</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-bell" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:1234567890" target="_blank">1234567890</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="mailto:1234567890@123.com" target="_blank">1234567890@123.com</a>
+                    </li>
+                    <li>
+                        <label>个人主页</label>
+                        <a href="https://gitee.com/ifishes" target="_blank">gitee.com/ifishes</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/ifishes" target="_blank">github.com/ifishes</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-align-left" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>HTML</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>CSS</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>JavaScript</label>
+                        <progress value="40" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>React</label>
+                        <progress value="30" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Node.js</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>小程序</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="/Users/andemundgarcia/Desktop/resume/assets/images/my-QR-code.jpeg" style="width: 100%;" alt="">
+            </section>
+
+            <!-- 技术栈 -->
+            <!-- <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>React、jQuery、微信小程序、Bootstrap、SASS、LESS</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>Node.js、MySQL、MongoDB、WordPress、ThinkPHP</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、SVN、Markdown</span>
+                        </li>
+                    </ul>
+                </div> -->
+        </section>
+
+        <main>
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-backward" aria-hidden="true"></i>过往履历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>深圳科学高中</span>
+                            <time>2016.9-2019.7</time>
+                        </h3>
+                        <p>
+                            高三期间参加艺考，获得中国传媒大学、上海戏剧学院、浙江传媒学院、上海视觉艺术学院和吉林动画学院合格证。</p>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>中山大学南方学院 - 网络与新媒体专业（本科）</span>
+                            <time>2019.9-至今</time>
+                        </h3>
+                      
+                    </li>
+                </ul>
+            </section>
+            
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-compass" aria-hidden="true"></i>在校经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[经历1]社团联合会-办公室理事。</span>
+                                <time>2019.10 - 至今</time><br/>
+                                 <a href="https://baike.sogou.com/v83094903.htm?fromTitle=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E5%8D%97%E6%96%B9%E5%AD%A6%E9%99%A2%E7%A4%BE%E5%9B%A2%E8%81%94%E5%90%88%E4%BC%9A" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i>中山大学南方学院社团联合会</a>
+
+                            </h3>
+                        
+                        <ul class="info-content">
+                            <li>社联炫酷夜、社团缤纷夜等活动。进行
+                                <mark>前期准备工作、催场、物资借出归还</mark>等工作。
+                             </li>
+                            <li>配合各个部门理事长与理事，实现
+                                <mark>工作交接</mark>。</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <h3>
+                            <span>[经历2]聚焦影视社-文宣部成员</span>
+                            <time>2019.9-至今</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>学习并进行
+                                <mark>社团公众号推文推送</mark>等工作，学习<mark>拍摄、排版、文案</mark>等内容。
+                                <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg5MTAxMjQ1OQ==&scene=124#wechat_redirect" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i>南苑聚焦影视社</a>。</li>
+                            <li>曾参与过文传晚会前期工作开会拍摄。</li>
+                            <li>至今参加过一次人像拍摄和公众号推文制作。</li>
+                            
+                       </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-camera-retro" aria-hidden="true"></i>图片拍摄</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[Photo1] 钓鱼</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <br/>
+                            <time>2019/2/12</time>
+                             <br/>
+                            <img class="photo" src="/Users/andemundgarcia/Desktop/resume/assets/images/photo1.jpg" onload="photo">
+                        </h3>
+                    </li>
+                        </ul>
+                  
+                    <ul>
+                    <li>
+                        <h3>
+                            <span>[Photo2] 石油小镇</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                             <br/>
+                            <time>2018/7/25</time>
+                             <br/>
+                             <img class="photo" src="/Users/andemundgarcia/Desktop/resume/assets/images/photo2.jpg" onload="photo">
+                        </h3>
+                        </ul>
+                    </li>
+                   
+                    <ul>
+                    <li>
+                        <h3>
+                            <span>[Photo3] 广州街头</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                             <br/>
+                            <time>2018/11/2</time>
+                             <br/>
+                             <img class="photo" src="/Users/andemundgarcia/Desktop/resume/assets/images/photo3.jpg" onload="photo">
+                        </h3>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>RECENT</h2>
+                <hr/>
+                <p>It was all very final on that gangway and I was grant too in my over coat. I cut quite a figure, and I was getting off, guaranteed. That wasn't the problem.<br/>
+                ————The legend of 1900</p>
+            </section>
+        </main>
+    </article>
+
+
+    <address>
+        <br>
+    Revise by Jiaxin Liu.
+    </address>
+
+    <footer>
+        <p>© 2019 刘嘉欣. 文档最后更新时间为
+            <time>2019年11月20日</time>.</p>
+    </footer>
+
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="https://gitee.com/itsay/resume" target="_blank">源代码</a>
+            </li>
+            <li>
+                <a href="http://if2er.com/" target="_blank">Blog</a>
+            </li>
+                        <li>
+                <a href="https://gitee.com/ifishes" target="_blank">My Gitee</a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
